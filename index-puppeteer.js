@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 
-(async () => {
+const main = async () => {
   const browser = await puppeteer.launch({
     headless: false,
     slowMo: 250,
@@ -10,4 +10,6 @@ import puppeteer from "puppeteer";
   await page.goto("https://www.paulinacocina.net/");
 
   await browser.close();
-})();
+};
+
+main();
