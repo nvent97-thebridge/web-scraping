@@ -9,6 +9,8 @@ const main = async () => {
 
   await page.goto("https://www.paulinacocina.net/");
 
+  // Select button and click it
+
   await browser.close();
 };
 
